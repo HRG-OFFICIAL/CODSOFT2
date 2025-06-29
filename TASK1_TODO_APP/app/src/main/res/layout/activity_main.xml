@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 Add New Task"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#BB86FC"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Task Entry Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#1E1E1E"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Title"
+                android:textColorHint="#9E9E9E"
+                android:textColor="#E0E0E0"
+                android:background="@drawable/edit_text_background_dark"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Description"
+                android:textColorHint="#9E9E9E"
+                android:textColor="#E0E0E0"
+                android:background="@drawable/edit_text_background_dark"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <Button
+                android:id="@+id/btnTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Task"
+                android:textColor="#121212"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_background_dark"
+                android:elevation="6dp"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="12dp"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Task List Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Your Tasks"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#BB86FC"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Task List Container (fragment placeholder) -->
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1E1E1E"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>
