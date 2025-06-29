@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quotes</string>
+    <string name="share_image_using">Share this quote via</string>
+    <string name="unknown_author">Author Unknown</string>
+    <string name="error_loading_quote">Couldn\'t load the quote. Please try again.</string>
+    <string name="app_tagline">Find Daily Inspiration in Every Quote</string>
+    <string name="previous">Previous Quote</string>
+    <string name="next">Next Quote</string>
+    <string name="view_liked_quotes">View Favorite Quotes</string>
+    <string name="quote_image_desc">Image displaying an inspirational quote</string>
+    <string name="app_logo_desc">Logo of the Quotes app</string>
+</resources>
